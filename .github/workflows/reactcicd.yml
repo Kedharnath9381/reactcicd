@@ -27,4 +27,4 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npm install -g gh-pages
-          npm run deploy
+          npx gh-pages -d dist -u "Kedharnath9381<kedharnath9381@gmail.com>" -r https://x-access-token:${GH_TOKEN}@github.com/Kedharnath9381/reactcicd.git
